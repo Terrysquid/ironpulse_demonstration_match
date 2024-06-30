@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表演赛</title>
+</head>
+<body>
+    <h1>表演赛</h1>
+    <div id="status">Status: 0</div>
+    <div id="match_time">match_time: 0</div>
+    <div id="remaining_time">remaining_time: 0</div>
+    <div id="scoreboard">
+        <div id="blue_score">蓝队(): 0</div>
+        <div id="red_score">红队(): 0</div>
+        <button onclick="score('blue')">蓝方得分/罚分</button>
+        <button onclick="score('red')">红方得分/罚分</button>
+    </div>
+    <div id="create">
+        <button onclick="reset()">reset</button>
+        <input type="text" id="team_blue" value="蓝队队号">
+        <input type="text" id="team_red" value="红队队号">
+        <input type="text" id="time" value="时间">
+        <button onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+        <button onclick="finish()">finish</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
